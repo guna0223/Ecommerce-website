@@ -8,6 +8,11 @@
 body {
     background: radial-gradient(rgb(194, 192, 192) 0%, #F2F2F2 100%);
 }
+a,a:hover{
+    text-decoration: none;
+    color: black;
+
+}
 
 .fixed-top {
     box-shadow: rgba(138, 137, 137, 0.35) 0px 5px 15px;
