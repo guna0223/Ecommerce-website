@@ -64,7 +64,7 @@ products.forEach(product => {
                          <p style="color: black;"> 
                          <small><span style="text-decoration: line-through; color:red">Rs:40000</span></small>
                          RS: ${product.price}</p>
-                        <p>(50% off)</p>
+                        <p class="off">(50% off)</p>
                      </strong>
                         <button class=" btn btn-secondary text-light">Add to cart</button>
                 </div>
