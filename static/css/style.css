@@ -80,7 +80,7 @@
     * {
         transition: 500ms;
     }
-  
+
     .row {
         /* background-color: red; */
         display: grid;
@@ -92,8 +92,8 @@
 
         .card {
             height: fit-content;
-            height: 250px;
-            width: 200px;
+            height: 280px;
+            width: 150px;
             filter: brightness(90%);
 
             img {
@@ -106,10 +106,15 @@
                 font-size: 10px;
             }
 
-            strong {
+            p {
                 font-size: 15px;
+            }
+
+            strong {
+                font-size: 10px;
 
                 span {
+                    display: none;
                     font-size: 10px;
                 }
             }
@@ -119,7 +124,7 @@
             }
 
             .btn {
-                margin-bottom: -px;
+                margin-top: 15px;
 
             }
         }
