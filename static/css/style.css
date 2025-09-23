@@ -1,0 +1,75 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+.fixed-top {
+    box-shadow: rgba(138, 137, 137, 0.35) 0px 5px 15px;
+
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    transition: 300ms;
+    transform: scale(1.05);
+}
+
+.dropdown-item:hover {
+    transition: 300ms;
+    text-decoration: none;
+}
+
+.form-control {
+    color: black;
+    border: none;
+    border-bottom: 20px black;
+}
+
+.form-control::placeholder {
+    color: black;
+}
+
+.carousel-item {
+    margin-top: 65px;
+}
+
+
+
+.card {
+
+    gap: 10px;
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    img {
+        padding-top: 10px;
+        margin: auto;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.btn:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px grey;
+}
+
+.mb-2:hover,
+.mb-3:hover,
+.small:hover {
+    cursor: pointer;
+  
+    text-decoration: underline;
+}
