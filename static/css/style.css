@@ -44,8 +44,9 @@
 .card {
 
     gap: 10px;
+    filter: brightness(90%);
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,inset rgba(10, 37, 64, 0.35) 0px -2px 6px 0px  ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, inset rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
 
     img {
         padding-top: 10px;
@@ -64,44 +65,67 @@
 .card:hover {
     transform: scale(1.05);
     box-shadow: 2px 2px 2px grey;
+    filter: brightness(100%);
 }
 
 .mb-2:hover,
 .mb-3:hover,
 .small:hover {
     cursor: pointer;
-  
+
     text-decoration: underline;
 }
 
-@media (max-width:600px){
-    .carousel{
-        
+@media (max-width:600px) {
+    * {
+        transition: 500ms;
     }
-    .row{
-       
+  
+    .row {
+        /* background-color: red; */
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .card{
-        
-        height: fit-content;
-        height: 250px;
-        width: 150px;
-        img{
-            height: 80px;
-            width: 80px;
-        }
-        h5{
-            margin-top: -20px;
-            font-size: 10px;
-        }
-       strong{
-        display: none;
-       }
-        .btn{
-            margin-bottom: auto;
 
+    main {
+        background: radial-gradient(rgb(180, 175, 175) 0%, rgb(239, 236, 236) 100%);
+
+        .card {
+            height: fit-content;
+            height: 250px;
+            width: 200px;
+            filter: brightness(90%);
+
+            img {
+                height: 80px;
+                width: 80px;
+            }
+
+            h5 {
+                margin-top: -20px;
+                font-size: 10px;
+            }
+
+            strong {
+                font-size: 15px;
+
+                span {
+                    font-size: 10px;
+                }
+            }
+
+            .off {
+                display: none;
+            }
+
+            .btn {
+                margin-bottom: -px;
+
+            }
+        }
+
+        .card:hover {
+            filter: brightness(100%);
         }
     }
 }
