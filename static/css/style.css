@@ -5,6 +5,10 @@
     transition: 500ms;
 }
 
+body {
+    background: radial-gradient(rgb(194, 192, 192) 0%, #F2F2F2 100%);
+}
+
 .fixed-top {
     box-shadow: rgba(138, 137, 137, 0.35) 0px 5px 15px;
 
@@ -82,7 +86,7 @@
     }
 
     .row {
-        /* background-color: red; */
+
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -95,6 +99,7 @@
             height: 280px;
             width: 150px;
             filter: brightness(90%);
+            transform: scale(1.05);
 
             img {
                 height: 80px;
