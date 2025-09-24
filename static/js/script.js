@@ -58,7 +58,13 @@ const products = [
         description:'Elite 2.0 Commander',
         price:917, 
         img:'gun.jpeg',
-    }
+    },
+    {
+        title:'COSCO',
+        description:'Robona pro football',
+        price:645, 
+        img:'football.jpeg',
+    }, 
 
 ]
 const container = document.querySelector(".row")
