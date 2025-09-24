@@ -3,68 +3,79 @@ const products = [
         title: "camera",
         description: "To take pic",
         price: 20000,
-        img: "camer.jpg"
+        img: "camer.jpg",
+        discount: 40000
     },
     {
         title: "Mobile ",
         description: "To paly game",
         price: 20000,
-        img: "mobile.jpg"
+        img: "mobile.jpg",
+        discount: 40000
     },
     {
         title: "Pro",
         description: "To show big screen",
         price: 20000,
-        img: "pro.jpg"
+        img: "pro.jpg",
+        discount: 40000
     },
     {
         title: "Samsung mobile",
         description: "To use camera",
         price: 20000,
-        img: "s24.jpg"
+        img: "s24.jpg",
+        discount: 40000
     },
     {
         title: "TV",
         description: "To see movie in big screen",
         price: 20000,
-        img: "tv.jpg"
+        img: "tv.jpg",
+        discount: 40000
     },
     {
         title: "TWS",
         description: "Enjoy the sound",
         price: 20000,
-        img: "tws.jpg"
+        img: "tws.jpg",
+        discount: 40000
     },
     {
         title: "vivo",
         description: "Enjoy mobile",
         price: 20000,
-        img: "vivo.jpg"
+        img: "vivo.jpg",
+        discount: 40000
     },
     {
         title: "vr",
         description: "Enjoy vr ",
         price: 20000,
-        img: "vr.jpg"
+        img: "vr.jpg",
+        discount: 40000
     },
     {
         title: 'Pilgrim',
         description: 'Advanced Hari Growth Serum',
         price: 297,
-        img: 'serum.webp'
+        img: 'serum.webp',
+        discount: 400
     },
     {
-        title:'Nerf 2.0',
-        description:'Elite 2.0 Commander',
-        price:917, 
-        img:'gun.jpeg',
+        title: 'Nerf 2.0',
+        description: 'Elite 2.0 Commander',
+        price: 917,
+        img: 'gun.jpeg',
+        discount: 1500
     },
     {
-        title:'COSCO',
-        description:'Robona pro football',
-        price:645, 
-        img:'football.jpeg',
-    }, 
+        title: 'COSCO',
+        description: 'Robona pro football',
+        price: 645,
+        img: 'football.jpeg',
+        discount: 1000
+    },
 
 ]
 const container = document.querySelector(".row")
@@ -78,7 +89,7 @@ products.forEach(product => {
               <div class="card-body">
                   <h5 class="card-title"> ${product.title} </h5>
                     <p class="card-text">${product.description} </p>
-                     <strong><p style="color: black;"> ₹ ${product.price}</p></strong>
+                    <p><span style="text-decoration: line-through; color: gray;"> Rs:${product.discount}</span> <strong style="color: black; text-decoration: none;> <span style="color: black; text-decoration: none;"> Rs:${product.price}</span></p>
                         <button class=" btn btn-secondary text-light">Add to cart</button>
                 </div>
          </div>

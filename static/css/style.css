@@ -8,7 +8,9 @@
 body {
     background: radial-gradient(rgb(194, 192, 192) 0%, #F2F2F2 100%);
 }
-a,a:hover{
+
+a,
+a:hover {
     text-decoration: none;
     color: black;
 
@@ -55,7 +57,9 @@ a,a:hover{
     gap: 10px;
     filter: brightness(90%);
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, inset rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+    border-radius: 50%;
+    border-style: none;
+
 
     img {
         padding-top: 10px;
@@ -65,15 +69,21 @@ a,a:hover{
     }
 }
 
+.btn {
+    border-radius: 20px;
+}
+
 .btn:hover {
+    border-radius: 2px;
     transition: 0.3s ease-in-out;
     transform: scale(1.05);
 
 }
 
 .card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, inset rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+    border-radius: 5px;
     transform: scale(1.05);
-    box-shadow: 2px 2px 2px grey;
     filter: brightness(100%);
 }
 
@@ -90,21 +100,15 @@ a,a:hover{
         transition: 500ms;
     }
 
-    .row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
     main {
         background: radial-gradient(rgb(180, 175, 175) 0%, rgb(239, 236, 236) 100%);
 
         .card {
             height: fit-content;
             height: 280px;
-            width: 150px;
             filter: brightness(90%);
             transform: scale(1.05);
-            margin:10px 20px;
+            margin: 10px 20px;
 
             img {
                 height: 80px;
