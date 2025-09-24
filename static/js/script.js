@@ -19,7 +19,7 @@ const products = [
     },
     {
         title: "Samsung mobile",
-        description: "To paly to use camera",
+        description: "To use camera",
         price: 20000,
         img: "s24.jpg"
     },
@@ -47,6 +47,18 @@ const products = [
         price: 20000,
         img: "vr.jpg"
     },
+    {
+        title: 'Pilgrim',
+        description: 'Advanced Hari Growth Serum',
+        price: 297,
+        img: 'serum.webp'
+    },
+    {
+        title:'Nerf 2.0',
+        description:'Elite 2.0 Commander',
+        price:917, 
+        img:'gun.jpeg',
+    }
 
 ]
 const container = document.querySelector(".row")
@@ -60,12 +72,7 @@ products.forEach(product => {
               <div class="card-body">
                   <h5 class="card-title"> ${product.title} </h5>
                     <p class="card-text">${product.description} </p>
-                     <strong>
-                         <p style="color: black;"> 
-                         <small><span style="text-decoration: line-through; color:red">₹ 40000</span></small>
-                         ₹ ${product.price}</p>
-                        <p class="off">(50% off)</p>
-                     </strong>
+                     <strong><p style="color: black;"> ₹ ${product.price}</p></strong>
                         <button class=" btn btn-secondary text-light">Add to cart</button>
                 </div>
          </div>
