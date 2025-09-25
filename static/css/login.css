@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    transition: 500ms;
 }
 
 body {
@@ -67,6 +68,7 @@ body {
                 }
 
                 .btn:hover {
+                    transform: scale(1.05);
                     filter: brightness(100%);
                 }
 
