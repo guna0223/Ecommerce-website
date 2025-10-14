@@ -8,7 +8,9 @@
 body {
     background: radial-gradient(rgb(194, 192, 192) 0%, #F2F2F2 100%);
 }
-
+.navbar{
+    filter: drop-shadow(10px 10px 5px rgb(84, 82, 82));
+}
 a,
 a:hover {
     text-decoration: none;
@@ -49,8 +51,6 @@ a:hover {
 .carousel-item {
     margin-top: 65px;
 }
-
-
 
 .card {
 

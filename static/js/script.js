@@ -88,10 +88,10 @@ const products = [
         off: 50
     },
 
-]
-const container = document.querySelector(".row")
+];
+const container = document.querySelector(".row");
 
-products.forEach(product => {
+products.forEach((product, index) => {
     const col = document.createElement('div')
     col.className = 'col-12 col-sm-6 col-md-4 col-lg-3'
     col.innerHTML = `
@@ -103,11 +103,9 @@ products.forEach(product => {
                     <p><del><span style="color: gray;">Rs:${product.discount}</span></del
                     <small><sup style="color:red">${product.off}%</sup></small>
                     <strong style="color: black; text-decoration: none;> <span style="color: black; text-decoration: none;"> Rs:${product.price}</span></p>
-                        <button class=" btn btn-secondary text-light">Add to cart</button>
+                        <button class=" btn btn-secondary text-light" data-index = "${index}">Add to cart</button>
                 </div>
          </div>
     `
     container.appendChild(col);
 });
-
-
