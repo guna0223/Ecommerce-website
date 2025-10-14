@@ -69,6 +69,22 @@ a:hover {
     }
 }
 
+.offcanvas {
+    background-color: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(0);
+    height: 70vh;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.offcanvas-body,
+.offcanvas-header {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+}
+.offcanvas-backdrop.show{
+    background-color: transparent;
+}
 .imgs:hover {
     z-index: 2;
     transform: scale(1.2);
@@ -101,7 +117,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- Product Card Styling --- */
+
 .product-card {
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -113,7 +129,6 @@ a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Image Hover Effect --- */
 .image-container {
     height: 220px;
     display: flex;
@@ -133,14 +148,13 @@ a:hover {
     transform: scale(1.08);
 }
 
-/* --- Price Section --- */
 .price-info {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-/* --- Add to Cart Button --- */
+
 .add-to-cart {
     border-radius: 8px;
     font-weight: 500;
@@ -149,7 +163,6 @@ a:hover {
 
 .add-to-cart:hover {
     background: #198754;
-    /* green */
     transform: scale(1.03);
 }
 
