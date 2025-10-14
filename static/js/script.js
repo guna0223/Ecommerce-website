@@ -16,19 +16,80 @@ const products = [
         discount: 40000,
         off: 50
     },
-    { title: "Pro", description: "To show big screen", price: 20000, img: "pro.jpg", discount: 40000, off: 50 },
-    { title: "Samsung mobile", description: "To use camera", price: 20000, img: "s24.jpg", discount: 40000, off: 50 },
-    { title: "TV", description: "To see movie in big screen", price: 20000, img: "tv.jpg", discount: 40000, off: 50 },
-    { title: "TWS", description: "Enjoy the sound", price: 20000, img: "tws.jpg", discount: 40000, off: 50 },
-    { title: "Vivo", description: "Enjoy mobile", price: 20000, img: "vivo.jpg", discount: 40000, off: 50 },
-    { title: "VR", description: "Enjoy vr", price: 20000, img: "vr.jpg", discount: 40000, off: 50 },
-    { title: "Pilgrim", description: "Advanced Hair Growth Serum", price: 297, img: "serum.webp", discount: 400, off: 50 },
-    { title: "Nerf 2.0", description: "Elite 2.0 Commander", price: 917, img: "gun.jpeg", discount: 1500, off: 50 },
-    { title: "COSCO", description: "Robona Pro Football", price: 645, img: "football.jpeg", discount: 1000, off: 50 },
+    { 
+        title: "Pro",
+         description: "To show big screen", 
+         price: 20000, 
+         img: "pro.jpg", 
+         discount: 40000, 
+         off: 50 
+        },
+    { 
+        title: "Samsung mobile", 
+        description: "To use camera", 
+        price: 20000, 
+        img: "s24.jpg", 
+        discount: 40000, 
+        off: 50 
+    },
+    { 
+        title: "TV", 
+        description: "To see movie in big screen", 
+        price: 20000, 
+        img: "tv.jpg", 
+        discount: 40000, 
+        off: 50 
+    },
+    { 
+        title: "TWS", 
+        description: "Enjoy the sound", 
+        price: 20000, 
+        img: "tws.jpg", 
+        discount: 40000, 
+        off: 50 
+    },
+    { 
+        title: "Vivo", 
+        description: "Enjoy mobile", 
+        price: 20000, 
+        img: "vivo.jpg", 
+        discount: 40000, 
+        off: 50 
+    },
+    { 
+        title: "VR", 
+        description: "Enjoy vr", 
+        price: 20000, 
+        img: "vr.jpg", 
+        discount: 40000, 
+        off: 50 
+    },
+    { 
+        title: "Pilgrim", 
+        description: "Advanced Hair Growth Serum", 
+        price: 297, 
+        img: "serum.webp", 
+        discount: 400, 
+        off: 50 
+    },
+    { 
+        title: "Nerf 2.0", 
+        description: "Elite 2.0 Commander",
+         price: 917, 
+         img: "gun.jpeg", 
+         discount: 1500, 
+         off: 50 
+        },
+    { 
+        title: "COSCO",
+         description: "Robona Pro Football", 
+         price: 645, 
+         img: "football.jpeg", 
+         discount: 1000, 
+         off: 50 
+        },
 ];
 
-// --- Generate Product Cards ---
-// --- Generate Product Cards ---
 const container = document.querySelector(".row");
 
 products.forEach((product, index) => {
@@ -61,7 +122,7 @@ products.forEach((product, index) => {
     container.appendChild(col);
 });
 
-// --- Cart Logic ---
+
 let cart = [];
 
 const offcanvasBody = document.querySelector(".offcanvas-body");
