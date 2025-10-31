@@ -197,9 +197,9 @@ function updateCart() {
     `;
     cartItemsContainer.appendChild(div);
 
-    cartTotal.textContent = "₹" + total;
-  });
 
+  });
+  cartTotal.textContent = "₹" + total;
 
 }
 
@@ -209,4 +209,3 @@ function changeQty(index, change) {
   if (cart[index].qty <= 0) cart.splice(index, 1);
   updateCart();
 }
-
