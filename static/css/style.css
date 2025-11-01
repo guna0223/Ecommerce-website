@@ -49,9 +49,14 @@ a:hover {
 .form-control::placeholder {
     color: black;
 }
-
-.carousel-item {
-    margin-top: 65px;
+.carousel{
+    margin-top: 70px;
+}
+.carousel-item{
+    height: 400px;
+    img{
+        height: 400px;
+    }
 }
 
 .card {
