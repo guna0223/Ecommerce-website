@@ -102,6 +102,7 @@ products.forEach((product, index) => {
              class="card-img-top product-img" 
              alt="${product.title}">
       </div>
+      
       <div class="card-body text-start">
         <h5 class="card-title fw-bold text-dark mb-2">${product.title}</h5>
         <p class="card-text text-muted small">${product.description}</p>
@@ -156,7 +157,7 @@ document.querySelectorAll(".add-to-cart").forEach((btn) => {
     updateCart();
 
     // Show alert message
-    alert(`${name} added to cart!`);
+    // alert(`${name} added to cart!`);
 
     // Show offcanvas cart
     const offcanvas = new bootstrap.Offcanvas(document.getElementById("peace"));
@@ -209,3 +210,19 @@ function changeQty(index, change) {
   if (cart[index].qty <= 0) cart.splice(index, 1);
   updateCart();
 }
+
+
+// alert message
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2000);
+}
+
+// Example usage
+showToast(`${name} added to cart!`);

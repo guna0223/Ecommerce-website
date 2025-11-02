@@ -46,15 +46,41 @@ a:hover {
     border-bottom: 20px black;
 }
 
+/* alert message */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    background: #2ecc71;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease, opacity 0.4s;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.toast.show {
+    right: 20px;
+    opacity: 1;
+}
+
+/*  */
+
 .form-control::placeholder {
     color: black;
 }
-.carousel{
+
+.carousel {
     margin-top: 70px;
 }
-.carousel-item{
+
+.carousel-item {
     height: 400px;
-    img{
+
+    img {
         height: 400px;
     }
 }
@@ -87,9 +113,11 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 1rem;
 }
-.offcanvas-backdrop.show{
+
+.offcanvas-backdrop.show {
     background-color: transparent;
 }
+
 .imgs:hover {
     z-index: 2;
     transform: scale(1.2);
@@ -220,3 +248,4 @@ a:hover {
         }
     }
 }
+
