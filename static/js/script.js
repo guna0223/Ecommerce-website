@@ -102,7 +102,7 @@ products.forEach((product, index) => {
              class="card-img-top product-img" 
              alt="${product.title}">
       </div>
-      
+
       <div class="card-body text-start">
         <h5 class="card-title fw-bold text-dark mb-2">${product.title}</h5>
         <p class="card-text text-muted small">${product.description}</p>
@@ -111,6 +111,7 @@ products.forEach((product, index) => {
           <small class="text-decoration-line-through text-secondary ms-2">₹${product.discount}</small>
           <span class="badge bg-danger ms-2">${product.off}% OFF</span>
         </div>
+        
         <button class="btn btn-dark w-100 add-to-cart"
                 data-name="${product.title}"
                 data-price="${product.price}"
@@ -122,6 +123,9 @@ products.forEach((product, index) => {
   `;
   container.appendChild(col);
 });
+
+
+
 
 
 let cart = [];
