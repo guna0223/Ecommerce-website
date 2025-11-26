@@ -24,13 +24,35 @@ body {
 .nav-link:hover {
     transform: scale(1.05);
 }
-.dropdown-item{
-   color: black;
+
+.dropdown-item {
+    color: black;
 }
+
 /* ------------ SEARCH ------------ */
 .form-control {
     border-radius: 40px;
     padding-left: 20px;
+}
+
+/* ------------ carousel ------------ */
+/* Carousel Wrapper */
+#carouselExampleIndicators {
+    width: 100%;
+    margin-top: 65px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Images */
+.carousel-inner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-top: 50px;
 }
 
 /* ------------ PRODUCT CARD ------------ */
@@ -180,12 +202,12 @@ body {
     .offcanvas {
         width: 85% !important;
         border-radius: 16px 0 0 16px;
-        background: rgba(255,255,255,0.35) !important;
+        background: rgba(255, 255, 255, 0.35) !important;
     }
 
     .offcanvas-body {
         padding: 12px;
-        background: rgba(255,255,255,0.85);
+        background: rgba(255, 255, 255, 0.85);
         border-radius: 15px;
     }
 
@@ -223,4 +245,11 @@ body {
     .toast.show {
         right: 20px;
     }
+
+    @media (max-width: 768px) {
+        .carousel-inner img {
+            height: 300px;
+        }
+    }
+
 }
