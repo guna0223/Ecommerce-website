@@ -24,7 +24,9 @@ body {
 .nav-link:hover {
     transform: scale(1.05);
 }
-
+.dropdown-item{
+   color: black;
+}
 /* ------------ SEARCH ------------ */
 .form-control {
     border-radius: 40px;
@@ -37,6 +39,7 @@ body {
     border-radius: 16px;
     overflow: hidden;
     transition: 0.35s ease;
+    margin-top: 20px;
     backdrop-filter: blur(10px);
 }
 
