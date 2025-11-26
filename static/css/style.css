@@ -48,8 +48,10 @@ body {
 .product-img {
     height: 240px;
     object-fit: contain;
-    padding: 12px;
     transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-card:hover .product-img {

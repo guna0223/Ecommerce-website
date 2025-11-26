@@ -1,17 +1,60 @@
 /* ============ PRODUCT DATA ============ */
 const products = [
-  { title: "Camera", description: "To take pictures", price: 20000, img: "camer.jpg", discount: 40000, off: 50 },
-  { title: "Mobile", description: "To play games", price: 20000, img: "mobile.jpg", discount: 40000, off: 50 },
-  { title: "Pro", description: "Big screen device", price: 20000, img: "pro.jpg", discount: 40000, off: 50 },
-  { title: "Samsung Mobile", description: "High-quality camera", price: 20000, img: "s24.jpg", discount: 40000, off: 50 },
-  { title: "TV", description: "Watch movies", price: 20000, img: "tv.jpg", discount: 40000, off: 50 },
-  { title: "TWS", description: "Wireless sound", price: 20000, img: "tws.jpg", discount: 40000, off: 50 },
-  { title: "Vivo", description: "Smooth mobile", price: 20000, img: "vivo.jpg", discount: 40000, off: 50 },
-  { title: "VR", description: "VR experience", price: 20000, img: "vr.jpg", discount: 40000, off: 50 },
-  { title: "Pilgrim Serum", description: "Hair Growth Serum", price: 297, img: "serum.webp", discount: 400, off: 50 },
-  { title: "Nerf 2.0 Gun", description: "Elite toy gun", price: 917, img: "gun.jpeg", discount: 1500, off: 50 },
-  { title: "COSCO Football", description: "Robona Pro Ball", price: 645, img: "football.jpeg", discount: 1000, off: 50 }
+  {
+    title: "Camera",
+    description: "To take pictures",
+    price: 20000,
+    img: "camer.jpg",
+    discount: 40000,
+    off: 50
+  },
+  {
+    title: "Mobile",
+    description: "To play games",
+    price: 20000,
+    img: "mobile.jpg",
+    discount: 40000,
+    off: 50
+  },
+  {
+    title: "Pro",
+    description: "Big screen device",
+    price: 20000,
+    img: "pro.jpg",
+    discount: 40000,
+    off: 50
+  },
+  { 
+    title:"Samsung Mobile", description: "High-quality camera", price: 20000, img: "s24.jpg", discount: 40000, off: 50 },
+  { 
+    title:
+    
+    "TV", description: "Watch movies", price: 20000, img: "tv.jpg", discount: 40000, off: 50 },
+  { 
+    title:
+    
+    "TWS", description: "Wireless sound", price: 20000, img: "tws.jpg", discount: 40000, off: 50 },
+  { 
+    title:
+    
+    "Vivo", description: "Smooth mobile", price: 20000, img: "vivo.jpg", discount: 40000, off: 50 },
+  { 
+    title:
+    
+    "VR", description: "VR experience", price: 20000, img: "vr.jpg", discount: 40000, off: 50 },
+  { 
+    title:
+    
+    "Pilgrim Serum", description: "Hair Growth Serum", price: 297, img: "serum.webp", discount: 400, off: 50 },
+  { 
+    title:
+    
+    "Nerf 2.0 Gun", description: "Elite toy gun", price: 917, img: "gun.jpeg", discount: 1500, off: 50 },
+  { 
+    title:
+     "COSCO Football", description: "Robona Pro Ball", price: 645, img: "football.jpeg", discount: 1000, off: 50 }
 ];
+
 
 /* Render products */
 const container = document.querySelector(".row");
