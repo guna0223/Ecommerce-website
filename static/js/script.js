@@ -104,7 +104,7 @@ products.forEach(p => {
           <p class="text-muted small">${p.description}</p>
 
           <div class="d-flex align-items-center gap-2">
-            <span class="fw-bold fs-5">₹${p.price}</span>
+            <span class="fw-bold fs-5">₹${p.price}</span>ō
             <small class="text-decoration-line-through text-secondary">₹${p.discount}</small>
             <span class="badge bg-danger">${p.off}% OFF</span>
           </div>

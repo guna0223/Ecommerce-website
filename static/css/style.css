@@ -1,5 +1,5 @@
 /* ---------------------------------------------------
-   GLOBAL RESET & BODY
+   RESET + GLOBAL
 --------------------------------------------------- */
 * {
     margin: 0;
@@ -61,7 +61,7 @@ body {
 }
 
 /* ---------------------------------------------------
-   PRODUCT GRID (5 cards on LG)
+   PRODUCT GRID
 --------------------------------------------------- */
 .product-grid {
     display: grid;
@@ -70,33 +70,34 @@ body {
     padding: 20px;
 }
 
-/* Medium screens = 3 cards */
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media (max-width: 991px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
     }
 }
 
-/* Small screens = 2 cards */
 @media (max-width: 767px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
     }
 }
 
-/* Mobile = 1 card */
 @media (max-width: 575px) {
     .product-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
         padding: 10px;
     }
 }
 
 /* ---------------------------------------------------
-   PRODUCT CARD
+   PRODUCT CARD + CENTER FIX
 --------------------------------------------------- */
 .product-card {
     background: rgba(255, 255, 255, 0.85);
@@ -105,7 +106,12 @@ body {
     transition: 0.35s ease;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.05);
-    padding: 10px;
+    padding: 12px;
+
+    /* ✨ CENTER ALL CONTENT */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
@@ -113,15 +119,25 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
+/* IMAGE */
 .product-img {
     height: 220px;
     object-fit: contain;
     padding: 15px;
-    transition: 0.3s ease-in-out;
+    margin: 0 auto;
+    transition: 0.3s ease;
 }
 
 .product-card:hover .product-img {
     transform: scale(1.08);
+}
+
+/* ---------------------------------------------------
+   PRODUCT TEXT
+--------------------------------------------------- */
+.product-card h5,
+.product-card p {
+    margin-bottom: 8px;
 }
 
 /* ---------------------------------------------------
@@ -133,8 +149,8 @@ body {
     border-radius: 10px;
     border: none;
     padding: 8px 12px;
-    width: 100%;
-    margin-top: 10px;
+    width: 90%;
+    margin: 10px auto 0;
     transition: 0.25s ease;
 }
 
@@ -158,12 +174,11 @@ body {
     padding: 15px;
 }
 
-/* Cart Item */
 .cart-item {
     padding: 12px;
     background: rgba(255, 255, 255, 0.70);
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     display: flex;
     gap: 10px;
     margin-bottom: 12px;
@@ -175,12 +190,8 @@ body {
     object-fit: contain;
 }
 
-.cart-item h6 {
-    font-size: 15px;
-}
-
 /* ---------------------------------------------------
-   TOAST POPUP
+   TOAST
 --------------------------------------------------- */
 .toast {
     position: fixed;
@@ -199,7 +210,7 @@ body {
 }
 
 /* ---------------------------------------------------
-   RESPONSIVE FIXES
+   EXTRA MOBILE TUNING
 --------------------------------------------------- */
 @media (max-width: 768px) {
 
@@ -207,34 +218,18 @@ body {
         padding: 8px 14px;
     }
 
-    .navbar-brand {
-        font-size: 22px !important;
-    }
-
-    .product-card {
-        padding: 10px;
-    }
-
     .product-img {
-        height: 180px !important;
+        height: 180px;
     }
 
     .add-to-cart {
-        font-size: 12px;
+        width: 95%;
+        font-size: 13px;
         padding: 6px;
     }
 
     .offcanvas {
         width: 85% !important;
         border-radius: 16px 0 0 16px;
-    }
-
-    .toast {
-        right: -200px;
-        font-size: 13px;
-    }
-
-    .toast.show {
-        right: 20px;
     }
 }
